@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Таймер обратного отсчёта</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <h1 class="page-title">Таймер обратного отсчёта</h1>
+
+    <div class="card">
+      <p class="subtitle">Укажи длительность и запусти обратный отсчёт</p>
+
+      <form id="create-form">
+        <label>
+          Длительность (секунды):
+          <input type="number" id="duration" min="1" required>
+        </label>
+        <button type="submit">Создать таймер</button>
+      </form>
+
+      <div id="active-timer" class="hidden">
+        <h2>Активный таймер <span id="timer-id"></span></h2>
+        <div id="time-remaining">0</div>
+        <button id="stop-btn">Остановить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
